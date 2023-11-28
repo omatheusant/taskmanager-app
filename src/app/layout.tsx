@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className={`w-full bg-secondary ${victorMono.variable} ${poppins.variable}`} lang="en">
+    <html className={`w-full bg-secondary transition-all duration-700 ease-in-out ${victorMono.variable} ${poppins.variable}`} lang="en">
       <body>{children}</body>
     </html>
   )

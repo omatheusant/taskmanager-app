@@ -10,9 +10,9 @@ export const AddTask = () => {
   return (
     <div >
       <button
-        className="btn btn-primary w-full uppercase font-bold text-secondary font-sans"
+        className="btn btn-primary w-full uppercase font-bold text-secondary font-sans duration-700"
         onClick={() => (document.getElementById('modal') as HTMLDialogElement).showModal()}>
-        Add new task <AiOutlinePlus size={20} className="-ml-1" />
+        nova tarefa <AiOutlinePlus size={20} className="-ml-1" />
       </button>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <dialog id="modal" className="modal modal-bottom sm:modal-middle p-0">
@@ -21,9 +21,15 @@ export const AddTask = () => {
           <div className="py-4 flex flex-col gap-2 w-full ">
             <label className="form-control w-full ">
               <div className="label">
-                <span className="label-text font-bold">What is your Task name?</span>
+                <span className="label-text font-bold">Título</span>
               </div>
-              <input type="text" placeholder="Type here" className="input input-bordered w-full" />
+              <input type="text" placeholder="Digite aqui" className="input input-bordered w-full" />
+            </label>
+            <label className="form-control w-full ">
+              <div className="label">
+                <span className="label-text font-bold">Descrição</span>
+              </div>
+              <input type="text" placeholder="Digite aqui" className="input input-bordered w-full" />
             </label>
           </div>
           <div className="modal-action absolute -top-4 right-2">
