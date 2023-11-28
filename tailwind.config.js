@@ -4,21 +4,27 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)"],
+        mono: ["var(--font-victor-mono)"],
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
         light: {
-          "primary": "#0F002E",
+          "primary": "#0A090C",
           "secondary": "#FFE2E2",
+          "sans": "var(--font-poppins)",
         },
       },
       {
         dark: {
           "primary": "#FFE2E2",
-          "secondary": "#0F002E",
+          "secondary": "#0A090C",
         },
       },
     ],
