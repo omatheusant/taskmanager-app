@@ -19,7 +19,6 @@ module.exports = {
           ...require("daisyui/src/theming/themes")["light"],
           "primary": "#0A090C",
           "secondary": "#FFE2E2",
-          "sans": "var(--font-poppins)",
         },
       },
       {
